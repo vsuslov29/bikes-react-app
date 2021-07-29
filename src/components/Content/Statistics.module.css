@@ -1,0 +1,15 @@
+.statistics {
+    grid-area: stats;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.statisticsTitle {
+    margin: 10px 0 5px;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+p {
+    margin-bottom: 5px;
+}

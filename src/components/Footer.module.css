@@ -1,0 +1,16 @@
+.footer {
+    background-color:#696969;
+    text-align: right;
+    padding: 6px 10px;
+    font-size: 20px;
+    line-height: 31px;
+}
+
+.devTitle {
+    color: #CBCACA;
+    margin-right: 10px;
+}
+
+.devName {
+    color: #FFFFFF;
+}
