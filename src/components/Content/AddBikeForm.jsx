@@ -6,7 +6,6 @@ const AddBikeForm = ({ onFormSubmit, bikesId }) => {
 
     const { register, handleSubmit, formState: { errors } } = useForm({mode: 'onChange'});
 
-    console.log(errors)
     return (
         <form className={s.addBikeForm} onSubmit={handleSubmit(onFormSubmit)}>
             <div className={errors.name && s.error}>
