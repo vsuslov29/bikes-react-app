@@ -20,14 +20,14 @@ class App extends React.Component {
     const value = e.target.value;
 
     this.setState(prevState => ({
-      bikes: prevState.bikes.map((bike, index) => id == index ?
+      bikes: prevState.bikes.map((bike, index) => id === index ?
         { ...bike, status: value } : bike)
     }))
   }
 
   deleteBike(id) {
     this.setState(prevState => ({
-      bikes: prevState.bikes.filter((bike, index) => id != index)
+      bikes: prevState.bikes.filter((bike, index) => id !== index)
     }))
   }
 

@@ -7,7 +7,8 @@ const BikesList = ({ bikes, handleStatus, deleteBike }) => {
     return (
         <div className={s.bikesList}>
             {bikes && bikes.map((bike, index) => (
-                <div
+                <div 
+                    key={Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15)}
                     className={s.bike}
                     style={{
                         border: '2px solid' +
@@ -17,7 +18,7 @@ const BikesList = ({ bikes, handleStatus, deleteBike }) => {
                 >
                     <BikeInfo bike={bike} handleStatus={handleStatus} id={index} />
                     <div className={s.crossAndPrice}>
-                        <img className={s.cross} src={cross} onClick={() => deleteBike(index)} />
+                        <img alt='' className={s.cross} src={cross} onClick={() => deleteBike(index)} />
                         <span className={s.price}>{Number(bike.price).toFixed(2)} UAH/hr.</span>
                     </div>
                 </div>
