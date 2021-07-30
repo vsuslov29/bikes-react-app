@@ -1,6 +1,6 @@
 # https://vsuslov29.github.io/bikes-react-app/
 
-     Procedures to clone and start app in development mode:
+Procedures to clone and start app in development mode:
 1) Navigate to the main page of the repository.
 2) Above the list of files, click  Code.
 3) Copy https link.
